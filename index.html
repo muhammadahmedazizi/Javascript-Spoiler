@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- should be placed just after the `<head>` code -->
+    <script>document.documentElement.className += ' spoiler-js';</script>
+
+
+
+
+    <button id="spoiler_button" name="spoiler_button" type="button">مشتاق؟ راز افشاں کیجے۔
+    </button>
+
+    <div id="spoiler_text" style="display: none;"> Anything you want to hide goes in here. </div>
+
+    <script>
+        // Spoiler Script 
+        var divToggleVis = document.getElementById('spoiler_text');
+        var button = document.getElementById('spoiler_button');
+       
+        button.onclick = function() {
+            if (divToggleVis.style.display === 'none') {
+                divToggleVis.style.display = 'block';
+            } else {
+                divToggleVis.style.display = 'none';
+            }
+       
+        };
+       
+      </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+
+
+#spoiler_button {
+    font-family: mehr;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#spoiler_button:hover {
+    background-color: black;
+    color: #fff;
+}
